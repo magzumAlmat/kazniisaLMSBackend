@@ -36,6 +36,20 @@ exports.getProgressById = async (req, res) => {
   }
 };
 
+
+// exports.getProgressByUserId = async (req, res) => {
+//   try {
+//     const progress = await Progress.findByPk(req.params.id);
+//     if (!progress) {
+//       return res.status(404).json({ error: 'Progress not found' });
+//     }
+//     res.status(200).json(progress);
+//   } catch (error) {
+//     res.status(500).json({ error: error.message });
+//   }
+// };
+
+
 // Обновить запись о прогрессе
 exports.updateProgress = async (req, res) => {
   try {
